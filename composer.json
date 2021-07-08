@@ -1,0 +1,19 @@
+{
+    "name": "amin/resualt-response",
+    "authors": [
+        {
+            "name": "amin",
+            "email": "mohammad12amin23@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Prs\\ResultResponse\\" : "src/"
+        },
+        "files": [
+            "src/Service/helpers.php"
+        ]
+    },
+    "require": {
+    }
+}
