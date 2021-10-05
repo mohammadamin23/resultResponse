@@ -22,7 +22,7 @@ class ResultService
             'isDone' => $isDone,
             'data' => $data,
             'paginate' => $paginate ? [
-                'total' => $data->total() ?? null , 'perPage' => $data->perPage() ?? null , 'queryParam' => 'page' , 'currentPage' => $data->currentPage() ?? null , 'lastPage' => $data->lastPage() ?? null
+                'total' => $data->total() , 'perPage' => $data->perPage()  , 'queryParam' => 'page' , 'currentPage' => $data->currentPage()  , 'lastPage' => $data->lastPage()
             ] : null,
             'message' => $message
         ) , $status);
