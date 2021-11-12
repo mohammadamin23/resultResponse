@@ -1,5 +1,6 @@
 {
-    "name": "amin.aliee/resualt-response",
+    "name": "amin.aliee/result-response",
+    "license":"MIT",
     "authors": [
         {
             "name": "amin",
@@ -15,5 +16,13 @@
         ]
     },
     "require": {
+    },
+    "extra": {
+        "providers": [
+            "ResultResponse\\Provider\\ResultResponseServiceProvider"
+        ],
+        "aliases": {
+            "Result": "ResultResponse\\Service\\Result"
+        }
     }
 }

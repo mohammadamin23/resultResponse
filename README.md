@@ -5,7 +5,7 @@
 install laravel >= 5 and lumen >=5.
 
 ```
-composer require amin.aliee/resualt-response
+composer require amin.aliee/result-response
 ```
 
 add to provider in confing/app.php
@@ -29,5 +29,21 @@ Result::response(true , ['can be anything'] , 'server message' , 200)
 //or
 
 result(true , ['can be anything'] , 'server message' , 200)
+
+in Resource && Resource Collection
+
+class UserResource extends JsonResource
+{
+    use withDefaultResponse;
+    
+    public bool $isDone = true;
+    
+    public string $message = '';
+    
+   .
+   .
+   .
+}
+
 
 ```
