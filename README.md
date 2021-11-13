@@ -30,20 +30,3 @@ Result::response(true , ['can be anything'] , 'server message' , 200)
 
 result(true , ['can be anything'] , 'server message' , 200)
 
-in Resource && Resource Collection
-
-class UserResource extends JsonResource
-{
-    use withDefaultResponse;
-    
-    public bool $isDone = true;
-    
-    public string $message = '';
-    
-   .
-   .
-   .
-}
-
-
-```
