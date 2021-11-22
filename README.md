@@ -16,9 +16,6 @@ Prs\ResultResponse\Provider\ResultResponseServiceProvider::class
 //&
 Result => Prs\ResultResponse\Service\Result::class
 
-//in lumen
- $app->register(\Prs\ResultResponse\Provider\ResultResponseServiceProvider::class);
-
 ```
 
 # usage
