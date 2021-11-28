@@ -21,9 +21,9 @@ Result => Prs\ResultResponse\Service\Result::class
 # usage
 
 ```
-Result::response(true , ['can be anything'] , 'server message' , 200)
+Result::response(true , ['can be anything'] , ['additional'], 'server message' , 200)
 
 //or
 
-result(true , ['can be anything'] , 'server message' , 200)
+result(true , ['can be anything'] , ['additional'], 'server message' , 200)
 
