@@ -22,12 +22,15 @@ class ResultService
     public function response(bool $isDone , $data, $additional = null , $message = '' , $status = 200)
     {
         if ($data instanceof JsonResource || $data instanceof ResourceCollection) {
-            return $data->additional(['isDone' => $isDone , 'message' => $message , $additional]);
+            $array = array(
+                'isDone' => $isDone,
+                'message' => $message
+            );
+            return $data->additional(array_merge($array , $additional));
         } else {
             $array = array(
                 'isDone' => $isDone,
                 'data' => $data,
-                $additional,
                 'message' => $message
             );
             return response()->json(array_merge($array , $additional) , $status);
