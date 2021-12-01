@@ -26,14 +26,14 @@ class ResultService
                 'isDone' => $isDone,
                 'message' => $message
             );
-            return $data->additional(array_merge($array , $additional));
+            return $data->additional(array_merge($array , $additional ?? []));
         } else {
             $array = array(
                 'isDone' => $isDone,
                 'data' => $data,
                 'message' => $message
             );
-            return response()->json(array_merge($array , $additional) , $status);
+            return response()->json(array_merge($array , $additional ?? []) , $status);
         }
     }
 }
